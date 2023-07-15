@@ -7,8 +7,8 @@ const Start = () => {
   return (
     <StartScreenContainer>
       <Logo>
-        <img src={logo} alt="Logo" />
-        <img src={title} alt="title" />
+        <LogoImg src={logo} alt="logo" />
+        <TitleImg src={title} alt="title" />
       </Logo>
       <Button>시작하기</Button>
     </StartScreenContainer>
@@ -21,6 +21,16 @@ const StartScreenContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   height: 100vh;
+`;
+
+const LogoImg = styled.img`
+  width: 168px;
+  height: 51px;
+`;
+
+const TitleImg = styled.img`
+  width: 164px;
+  height: 46px;
 `;
 
 const Logo = styled.div`

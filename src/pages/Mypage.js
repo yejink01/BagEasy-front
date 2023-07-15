@@ -8,9 +8,6 @@ const MyPage = () => {
     <MyPageContainer>
       <Head />
       <Contents />
-      <Footer>
-        <Logout>로그아웃</Logout>
-      </Footer>
     </MyPageContainer>
   );
 };
@@ -21,16 +18,5 @@ const MyPageContainer = styled.div`
   align-items: center;
 `;
 
-const Footer = styled.footer`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 230px;
-`;
-
-const Logout = styled.div`
-  text-decoration: underline;
-  cursor: pointer;
-`;
 
 export default MyPage;
